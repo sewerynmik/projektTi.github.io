@@ -17,16 +17,16 @@
 
             <div class="navList">
                 <ul>
-                    <li>Wyszukiwarka</li>
-                    <li>O stronie
+                    <li id="n1">Zdjęcie</li>
+                    <li id="n2">Szukaj
                         <ul class="podmenu">
-                            <li>Wersja</li>
-                            <li>Wersja</li>
-                            <li>Wersja</li>
+                            <li>Bardzo</li>
+                            <li>Fajna</li>
+                            <li>Strona</li>
                         </ul>
                     </li>
-                    <li>O autorze</li>
-                    <li class="last">Mowa końcowa</li>
+                    <li id="n3">O YouTube</li>
+                    <li id="n4">Formularz</li>
                 </ul>
             </div>
         </div>
@@ -55,6 +55,7 @@
         <p>
             Unikalna cecha YouTube polega na tym, że oferuje coś dla każdego – od amatorskich filmików po profesjonalne produkcje. Użytkownicy mogą znaleźć na platformie filmy edukacyjne, recenzje produktów, wideo-blogi (vlogi), muzykę, filmy instruktażowe, filmy dokumentalne i wiele innych. To sprawia, że YouTube jest nie tylko narzędziem rozrywkowym, ale także potężnym medium edukacyjnym i informacyjnym.
         </p>
+        
         <p>
             Jedną z najważniejszych cech YouTube jest jego demokratyczna natura. Każdy, kto ma dostęp do internetu, może tworzyć treści. Dzięki temu YouTube stał się platformą, która umożliwia wyrażanie się i dzielenie się talentami bez potrzeby posiadania dużych zasobów finansowych czy połączeń w tradycyjnych mediach. To otwiera drzwi dla niezliczonych twórców z różnych środowisk i kultur, co z kolei wzbogaca i różnicuje treści dostępne na platformie.
         </p>
@@ -72,7 +73,30 @@
     <hr>
 
     <div class="karuzela">
-        
+        <div class="slaid">
+            <img src="./zdjecia/logo1.png">
+            <img src="./zdjecia/logo2.png">
+            <img src="./zdjecia/logo3.png">
+            <img src="./zdjecia/logo4.png">
+            <img src="./zdjecia/logo5.png">
+            <img src="./zdjecia/logo6.png">
+        </div>
+        <div class="slaid">
+            <img src="./zdjecia/logo1.png">
+            <img src="./zdjecia/logo2.png">
+            <img src="./zdjecia/logo3.png">
+            <img src="./zdjecia/logo4.png">
+            <img src="./zdjecia/logo5.png">
+            <img src="./zdjecia/logo6.png">
+        </div>
+        <div class="slaid">
+            <img src="./zdjecia/logo1.png">
+            <img src="./zdjecia/logo2.png">
+            <img src="./zdjecia/logo3.png">
+            <img src="./zdjecia/logo4.png">
+            <img src="./zdjecia/logo5.png">
+            <img src="./zdjecia/logo6.png">
+        </div>
     </div>
 
     <hr>
@@ -84,18 +108,20 @@
             <input type="text" name="email" id="email" placeholder="Email">
             <input type="text" name="temat" id="temat" placeholder="Temat">
             <textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-            <section><input type="checkbox" name="checkbox" id="checkbox"> Wyrażam zgodę na przetwarzanie moich danych osobowych w celu udzielenia odpowiedzi na przesłane zapytanie. </section>
-            <input type="submit" value="Wyślij">
+            <section><input type="checkbox" name="zgoda" id="zgoda"> Wyrażam zgodę na przetwarzanie moich danych osobowych w celu udzielenia odpowiedzi na przesłane zapytanie. </section>
+            <input type="submit" value="Wyślij" id="wyslij">
         </form>
-
     </div>
 
 
     <hr>
     
     <footer id="footer">
-        <p>Strona stworzona przez Seweryn Mika króla świata  </p>
+        <p>Strona stworzona przez Seweryn Mik</p>
+        <button onclick="authenticate().then(loadClient)">authorize and load</button>
+<button onclick="execute()">execute</button>
+
     </footer>
-    
+    <script src="https://apis.google.com/js/api.js"></script>
     <script src="script.js"></script>
 </body>
